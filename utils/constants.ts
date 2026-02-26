@@ -3,14 +3,25 @@ export const HERO_IMAGE = "/birthday_pics/dante1.jpeg";
 
 export const PLACEHOLDER_IMAGES = {
   friend: "/birthday_pics/dante2.jpeg",
-  gallery: [
-    "/birthday_pics/dante3.jpeg",
-    "/birthday_pics/dante4.jpeg",
-    "/birthday_pics/dante1.jpeg",
-    "/birthday_pics/dante2.jpeg",
-    "/birthday_pics/dante3.jpeg",
-    "/birthday_pics/dante4.jpeg",
-  ],
+ gallery: [
+  { src: "/birthday_pics/dante3.jpeg", message: "'Ah Ah Father Abraham reborn... Feeling the beards man' 🧔🏾‍♂️✨" },
+  { src: "/birthday_pics/dante4.jpeg", message: "'Hmmmm...the boy fine' 😏" },
+  { src: "/birthday_pics/dante1.jpeg", message: "Ladies man 😎🔥" },
+  { src: "/birthday_pics/dante2.jpeg", message: "'This guy just they build they go...... be calming down bro'😂" },
+  { src: "/birthday_pics/dante3.jpeg", message: "'Ah Ah Father Abraham reborn... Feeling the beards man' 🧔🏾‍♂️" },
+  { src: "/birthday_pics/dante4.jpeg", message: "Hmmm...😎🔥 " },
+  { src: "/birthday_pics/dante5.jpg", message: "MEE 101 expert 🤓📚.... Ahhh Dante was so nice he did MEE assignment for #500 💸😭 when people were begging me with 2k" },
+  { src: "/birthday_pics/dante6.jpg", message: "POV: Have you taken the pic bro?? 📸😐" },
+  { src: "/birthday_pics/dante7.jpg", message: "UHhhhh hell no... what the fuck men 📸😐💀" },
+  { src: "/birthday_pics/dante8.jpg", message: "Cutesiesss✨" },
+  { src: "/birthday_pics/dante9.jpg", message: "'Bros like .....I am Tooo fresshhh' 😮‍💨" },
+  { src: "/birthday_pics/dante10.jpg", message: "Skin is Skinning...it is giving 'Body is tea' ✨🧴😮‍🔥" },
+  { src: "/birthday_pics/dante11.jpg", message: "She used to call me on my ..... " },
+  { src: "/birthday_pics/dante12.jpg", message: "We see the Grills bro.....😂 " },
+  { src: "/birthday_pics/dante13.jpg", message: "'I do not  know why his throw back is even fine 😭🔥, this is not allowed 🚫😂 i will remove this photo in the next push'" },
+  { src: "/birthday_pics/dante14.jpg", message: "'Yessss, now this is a throwback we like to see' 😂📸 ...Bro you need to stop/cancel Christy 😭 how does she have this man 🤣" },
+],
+
 };
 
 export const TIMELINE_EVENTS = [

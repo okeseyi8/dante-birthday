@@ -1,4 +1,4 @@
-import { TIMELINE_EVENTS } from "@/utils/constants";
+import { TIMELINE_EVENTS } from "@/public/birthday_pics/constants";
 
 export const TimelineJourney = () => {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PLACEHOLDER_IMAGES } from "@/utils/constants";
+import { PLACEHOLDER_IMAGES } from "@/public/birthday_pics/constants";
 
 export const EditorialLetter = () => {
   return (
@@ -55,17 +55,15 @@ export const EditorialLetter = () => {
 
         <div data-aos="fade-up">
           <p>
-            <span className="drop-cap">H</span> owever, Dante is incredibly petty😂. If
-            you have offended him before, watch your back, cause he’s coming to
-            get you and HE WILL!
+            <span className="drop-cap">H</span> owever, Dante is incredibly
+            petty😂. If you have offended him before, watch your back, cause
+            he’s coming to get you and HE WILL!
           </p>
 
           <div className="pull-quote">
             "Memories of our time together are our treasured possessions."
           </div>
-          <p>
-            From the entire team, We love you🤍.
-          </p>
+          <p>From the entire team, We love you🤍.</p>
         </div>
       </div>
     </section>

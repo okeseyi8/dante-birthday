@@ -1,4 +1,4 @@
-import { FUN_FACTS } from "@/utils/constants";
+import { FUN_FACTS } from "@/public/birthday_pics/constants";
 
 export const FunFacts = () => {
   return (

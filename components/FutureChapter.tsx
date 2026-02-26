@@ -18,7 +18,7 @@ export const FutureChapter = () => {
         >
           As you step into this new year, I hope lines fall into pleasant places
           for you. May all your silent prayers be answered (only the good ones).
-          May Hod meet you at the point of your needs. May you find peace, joy
+          May God meet you at the point of your needs. May you find peace, joy
           and happiness. May you never lose your spark.
         </p>
       </div>
