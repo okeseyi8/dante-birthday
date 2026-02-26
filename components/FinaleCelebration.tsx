@@ -13,10 +13,10 @@ export const FinaleCelebration = () => {
   return (
     <section className="finale">
       <h1 style={{ fontSize: "5rem" }} data-aos="scale-up">
-        Happy Birthday, Alex!
+        Happy Birthday, Dante!
       </h1>
       <p style={{ marginBottom: "30px" }}>
-        Celebrating 30 Years of Excellence.
+        Celebrating 24 Years of Excellence.
       </p>
       <Button onClick={launchConfetti}>Launch Confetti</Button>
       <br />

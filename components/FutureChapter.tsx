@@ -16,10 +16,10 @@ export const FutureChapter = () => {
             color: "#666",
           }}
         >
-          As Alex steps into this new year, the headline is clear: The best is
-          yet to come. With new projects on the horizon and even more travel
-          planned, we are looking at a year of unprecedented growth. Stay
-          tuned—this legend is only getting started.
+          As you step into this new year, I hope lines fall into pleasant places
+          for you. May all your silent prayers be answered (only the good ones).
+          May Hod meet you at the point of your needs. May you find peace, joy
+          and happiness. May you never lose your spark.
         </p>
       </div>
     </section>

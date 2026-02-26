@@ -15,25 +15,33 @@ export const PLACEHOLDER_IMAGES = {
 
 export const TIMELINE_EVENTS = [
   {
-    year: 1994,
-    description: "The Legend is born in New York City. A star from day one.",
+    year: 2002,
+    description: "A legend was born. I’m guessing in Lagos.",
   },
   {
-    year: 2012,
+    year: 2020,
     description:
-      "University days. Where the 'weird habits' and best friendships began.",
+      "University days, God ordered our friendship.",
   },
   {
-    year: 2018,
+    year: 2022,
     description:
-      "Landing the dream job. A major milestone in the career spread.",
+      "He moved continents🥹🤧. Big achievements though",
+  },
+  {
+    year: 2026,
+    description:
+      "He’ll be getting his PR",
   },
 ];
 
 export const FUN_FACTS = [
-  'Can quote every single line from "The Office."',
-  "Refuses to eat pizza unless there is ranch dressing nearby.",
-  'The undisputed king of "Just one more game" at 2 AM.',
+  '⁠Dante was once an Ubuntu Linux influencer and ambassador. He cam with the saying "Ubuntu is fast🤧"',
+  " ⁠He would die on a hill even after finding out he’s wrong",
+  '⁠He brought our friend group together low-key.',
+  '⁠He cooks proper egusi soup.',
+  ' ⁠He can die for good music.',
+  ' ⁠He uses Barca to statpad in pes',
 ];
 
 export const TESTIMONIALS = [

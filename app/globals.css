@@ -145,21 +145,54 @@ h3,
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* --- 4. PHOTO GALLERY (Masonry) --- */
+/* --- 4. PHOTO GALLERY (Vertical Carousel) --- */
 .gallery-grid {
-  column-count: 3;
-  column-gap: 20px;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 600px; /* Fixed height for carousel */
+  position: relative;
 }
 
-.gallery-grid img {
+.gallery-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Remove gap for seamless scrolling */
+  height: 100%;
+}
+
+.gallery-item {
   width: 100%;
-  margin-bottom: 20px;
+  height: 450px; /* Expanded height for each item */
+  /* overflow: hidden; */
+  flex-shrink: 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the container */
   filter: grayscale(100%);
-  transition: 0.5s ease;
+  transition:
+    filter 0.5s ease,
+    transform 0.3s ease;
   cursor: pointer;
 }
 
-.gallery-grid img:hover {
+.gallery-item:hover img {
   filter: grayscale(0%);
   transform: scale(1.02);
 }
@@ -167,7 +200,7 @@ h3,
 /* --- 5. FUN FACTS CARDS --- */
 .fact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
 }
 
@@ -179,11 +212,107 @@ h3,
   border-bottom: 5px solid var(--accent);
 }
 
-/* --- 6. TESTIMONIALS --- */
-.testimonial-sidebar {
-  background: #eeece7;
-  padding: 40px;
+/* --- 6. TESTIMONIALS / AUDIO PLAYERS --- */
+.audio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* overflow: hidden; */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.audio-row {
+  display: flex;
+  gap: 20px;
+  width: calc(320px * 12 + 220px); /* 12 items with gaps */
+}
+
+.audio-item {
+  flex: 0 0 320px;
+  min-width: 320px;
+}
+
+.audio-player {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.audio-player:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.audio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.audio-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.play-btn {
+  background: linear-gradient(135deg, var(--accent), #b58a4a);
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.4);
+}
+
+.play-btn:active {
+  transform: scale(0.95);
+}
+
+.play-icon {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #d4af37);
+  width: 0%;
+  transition: width 0.1s ease;
+  border-radius: 4px;
+}
+
+audio {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
 }
 
 /* --- 8. FINALE --- */
@@ -229,7 +358,22 @@ h3,
     left: 0;
   }
   .gallery-grid {
-    column-count: 1;
+    flex-direction: column;
+    height: 600px; /* Keep fixed height for carousel effect */
+  }
+  .gallery-column:nth-child(2),
+  .gallery-column:nth-child(3) {
+    display: none; /* Hide second and third columns on mobile */
+  }
+  .gallery-column {
+    width: 100%; /* Full width for single column */
+  }
+  .audio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 
