@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { useParams } from "next/navigation";
 import { initAOS } from "@/services/animationService";
 import { HeroCover } from "@/components/HeroCover";
 import { EditorialLetter } from "@/components/EditorialLetter";
@@ -11,7 +12,10 @@ import { Testimonials } from "@/components/Testimonials";
 import { FutureChapter } from "@/components/FutureChapter";
 import { FinaleCelebration } from "@/components/FinaleCelebration";
 
-export default function Home() {
+export default function EditionPage() {
+  const params = useParams();
+  const year = params.year as string;
+
   useEffect(() => {
     initAOS();
   }, []);
@@ -19,6 +23,9 @@ export default function Home() {
   return (
     <>
       <HeroCover />
+      <div style={{ textAlign: "center", padding: "50px" }}>
+        <h1>Birthday Edition {year}</h1>
+      </div>
       <EditorialLetter />
       <TimelineJourney />
       <PhotoGallery />
